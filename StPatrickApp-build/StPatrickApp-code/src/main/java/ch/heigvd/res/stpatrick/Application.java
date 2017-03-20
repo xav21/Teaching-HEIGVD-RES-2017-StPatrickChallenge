@@ -14,6 +14,8 @@ public class Application {
   }
 
   IStreamDecoratorController getStreamDecoratorController() {
-    return null;
+
+
+    return (IStreamDecoratorController) new ModifiedStreamProcessor('a');
   }
 }
